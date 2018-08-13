@@ -1,0 +1,5 @@
+default: warning
+logs:
+  requests.packages.urllib3.connectionpool: error
+  py.warnings: error
+

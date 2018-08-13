@@ -1,0 +1,90 @@
+great_room_lights:
+  entities:
+    - light.great_room_great_room_hanging
+    - light.great_room_great_room_recessed
+
+living_room_lights:
+  entities:
+    - light.living_room_entryway
+
+master_bedroom_lights:
+  entities:
+    - light.master_bedroom_andys_nightstand
+    - light.master_bedroom_overhead_lighting
+
+multisensor_garage_entry:
+  entities:
+    - binary_sensor.multisensor_garage_entry_motion
+    - sensor.multisensor_garage_entry_temperature
+    - sensor.multisensor_garage_entry_relative_humidity
+    - sensor.multisensor_garage_entry_luminance
+    - sensor.multisensor_garage_entry_alarm_level
+    - sensor.multisensor_garage_entry_alarm_type
+    - sensor.multisensor_garage_entry_burglar
+    - sensor.multisensor_garage_entry_emergency
+    - sensor.multisensor_garage_entry_power_management
+    - sensor.multisensor_garage_entry_sourcenodeid
+
+multisensor_great_room:
+  entities:
+    - binary_sensor.multisensor_great_room_motion
+    - sensor.multisensor_great_room_temperature
+    - sensor.multisensor_great_room_relative_humidity
+    - sensor.multisensor_great_room_luminance
+    - sensor.multisensor_great_room_ultraviolet
+    - sensor.multisensor_great_room_alarm_level
+    - sensor.multisensor_great_room_alarm_type
+    - sensor.multisensor_great_room_burglar
+    - sensor.multisensor_great_room_sourcenodeid
+
+nest_protect_emmas_room:
+  entities:
+    - sensor.emmas_smoke_detector
+    - binary_sensor.emmas_room_nest_protect_online
+    - sensor.emmas_room_nest_protect_color_status
+    - sensor.emmas_room_nest_protect_smoke_status
+    - sensor.emmas_room_nest_protect_co_status
+    - sensor.emmas_room_nest_protect_battery_health
+
+nest_protect_master_bedroom:
+  entities:
+    - binary_sensor.master_nest_protect_online
+    - sensor.master_nest_protect_color_status
+    - sensor.master_nest_protect_smoke_status
+    - sensor.master_nest_protect_co_status
+    - sensor.master_nest_protect_battery_health
+
+nest_protect_rec_room:
+  entities:
+    - binary_sensor.rec_room_nest_protect_online
+    - sensor.rec_room_nest_protect_color_status
+    - sensor.rec_room_nest_protect_smoke_status
+    - sensor.rec_room_nest_protect_co_status
+    - sensor.rec_room_nest_protect_battery_health
+
+nest_thermostat:
+  entities:
+    - climate.downstairs
+    - binary_sensor.downstairs_thermostat_online
+    - sensor.downstairs_thermostat_humidity
+    - sensor.downstairs_thermostat_temperature
+    - binary_sensor.downstairs_thermostat_has_leaf
+    - binary_sensor.downstairs_thermostat_fan
+    - sensor.downstairs_thermostat_operation_mode
+    - sensor.downstairs_thermostat_hvac_state
+    - sensor.downstairs_thermostat_target
+
+sense_energy_monitor:
+  entities:
+    - sensor.energy_usage
+    - sensor.daily_usage
+    - sensor.weekly_usage
+    - sensor.monthly_usage
+    - sensor.yearly_usage
+
+upstairs_windows:
+  entities:
+    - binary_sensor.master_bedroom_front_window
+    - binary_sensor.front_bedroom_window_1
+    - binary_sensor.front_bedroom_window_2
+    - binary_sensor.corner_bedroom_front_window

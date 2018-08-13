@@ -1,0 +1,3 @@
+emmas_smoke_detector:
+  value_template: '{% if is_state("sensor.emmas_room_nest_protect_smoke_status", "Ok") %} Online {% else %} Offline {% endif %}'
+  friendly_name: Test Smoke Detector

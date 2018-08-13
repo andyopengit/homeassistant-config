@@ -1,0 +1,7 @@
+light:
+  - platform: template
+    lights:
+      basketball_court:
+        entity_id: switch.switch_inovelli_basketball_court_switch
+        friendly_name: 'Basketball Court'
+

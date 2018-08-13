@@ -1,0 +1,8 @@
+name: Home
+latitude: !secret latitude
+longitude: !secret longitude
+elevation: !secret elevation
+unit_system: Imperial
+time_zone: America/New_York
+customize: !include includes/customize.yaml
+customize_glob: !include includes/customize_glob.yaml

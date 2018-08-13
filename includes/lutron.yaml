@@ -1,0 +1,4 @@
+host: 172.16.1.34
+username: !secret lutron_user
+password: !secret lutron_user
+

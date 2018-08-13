@@ -1,0 +1,13 @@
+great_room:
+  name: Great Room
+  options:
+    - PowerOff
+    - Android TV
+    - Apple TV
+  icon: mdi:monitor
+bedroom:
+  name: Bedroom TV
+  options:
+    - PowerOff
+    - Shield TV
+  icon: mdi:monitor

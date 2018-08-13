@@ -1,0 +1,20 @@
+# "binary_sensor.*_nest_protect_online":
+#   icon: mdi:smoke-detector
+#   rgb_color: if (state === 'on') return [0,128,0]; else return [3, 169, 244];
+
+sensor.multisensor_*_relative_humidity:
+  friendly_name: Humidity
+  icon: mdi:water-percent
+
+sensor.multisensor_*_temperature:
+  friendly_name: Temperature
+
+sensor.*_nest_protect_smoke_status:
+  friendly_name: Smoke
+  icon: >
+    if (state === 'on') return 'mdi:smoking';
+    return 'mdi:smoking-off'
+
+sensor.*_nest_protect_co_status:
+  friendly_name: Carbon Monoxide
+  icon: mdi:periodic-table-co2

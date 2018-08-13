@@ -1,0 +1,185 @@
+binary_sensor.multisensor_garage_entry_motion:
+  config_entry_id:
+  name: Garage Entry Motion
+  platform: zwave
+  unique_id: 8-72057594177126400
+binary_sensor.multisensor_great_room_motion:
+  config_entry_id:
+  name: Great Room Motion
+  platform: zwave
+  unique_id: 6-72057594143571968
+binary_sensor.binary_great_room_window:
+  config_entry_id:
+  name:
+  platform: zha
+  unique_id: 00:0d:6f:00:0b:3b:d0:fe-1-1280
+climate.downstairs:
+  config_entry_id: 71fe9e9be4ca41e4b1246c6baeb5e0a4
+  name: Nest Thermostat
+  platform: nest
+  unique_id: sLKmpwT8W_7qPxaJzNmE1OpGpI0TAesf
+light.dimmer_kitchen_hall:
+  config_entry_id:
+  name: Kitchen Hall
+  platform: zwave
+  unique_id: 2-72057594076299265
+media_player.chrome:
+  config_entry_id:
+  name:
+  platform: plex
+  unique_id: dwboeh6zoyfybytexvjhydue
+media_player.shield_android_tv:
+  config_entry_id:
+  name:
+  platform: plex
+  unique_id: c79558663e7f955-com-plexapp-android
+media_player.shield_bedroom:
+  config_entry_id: 93e227074ca84d21bf9a8c723845115a
+  name: ''
+  platform: cast
+  unique_id: 0ca6b7a7-097f-9787-0874-e1d86c3bcdf5
+media_player.shield_great_room:
+  config_entry_id: 93e227074ca84d21bf9a8c723845115a
+  name: ''
+  platform: cast
+  unique_id: 29a98a96-ee30-eba8-194e-042a3ee9c113
+sensor.andys_iphone_battery_level:
+  config_entry_id:
+  name: Andy's iPhone Battery Level
+  platform: ios
+  unique_id: level_andys_iphone
+sensor.andys_iphone_battery_state:
+  config_entry_id:
+  name: Andy's iPhone Battery State
+  platform: ios
+  unique_id: state_andys_iphone
+sensor.multisensor_garage_entry_alarm_level:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 8-72057594178191377
+sensor.multisensor_garage_entry_alarm_type:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 8-72057594178191361
+sensor.multisensor_garage_entry_burglar:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 8-72057594178191521
+sensor.multisensor_garage_entry_emergency:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 8-72057594178191569
+sensor.multisensor_garage_entry_luminance:
+  config_entry_id:
+  name: Garage Entry Light
+  platform: zwave
+  unique_id: 8-72057594177142834
+sensor.multisensor_garage_entry_power_management:
+  config_entry_id:
+  name: Garage Entry Sensor Battery
+  platform: zwave
+  unique_id: 8-72057594178191537
+sensor.multisensor_garage_entry_relative_humidity:
+  config_entry_id:
+  name: Garage Entry Humidity
+  platform: zwave
+  unique_id: 8-72057594177142866
+sensor.multisensor_garage_entry_sourcenodeid:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 8-72057594178191393
+sensor.multisensor_garage_entry_temperature:
+  config_entry_id:
+  name: Garage Entry Temperature
+  platform: zwave
+  unique_id: 8-72057594177142802
+sensor.multisensor_great_room_alarm_level:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 6-72057594144636945
+sensor.multisensor_great_room_alarm_type:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 6-72057594144636929
+sensor.multisensor_great_room_burglar:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 6-72057594144637089
+sensor.multisensor_great_room_luminance:
+  config_entry_id:
+  name: Great Room Light
+  platform: zwave
+  unique_id: 6-72057594143588402
+sensor.multisensor_great_room_relative_humidity:
+  config_entry_id:
+  name: Great Room Humidity
+  platform: zwave
+  unique_id: 6-72057594143588434
+sensor.multisensor_great_room_sourcenodeid:
+  config_entry_id:
+  name:
+  platform: zwave
+  unique_id: 6-72057594144636961
+sensor.multisensor_great_room_temperature:
+  config_entry_id:
+  name: Great Room Temperature
+  platform: zwave
+  unique_id: 6-72057594143588370
+sensor.multisensor_great_room_ultraviolet:
+  config_entry_id:
+  name: Great Room UV
+  platform: zwave
+  unique_id: 6-72057594143588786
+sensor.visonic_mct340_e_0b3bd0fe_1_1026:
+  config_entry_id:
+  name:
+  platform: zha
+  unique_id: 00:0d:6f:00:0b:3b:d0:fe-1-1026
+switch.basketball_court:
+  config_entry_id:
+  name: Basketball Court
+  platform: zwave
+  unique_id: 7-72057594160168960
+zwave.controller_zigbee_zwave_usb_adapter:
+  config_entry_id:
+  name: Controller - Z-Wave/ZigBee USB Stick
+  platform: zwave
+  unique_id: node-1
+zwave.dimmer_kitchen_hall:
+  config_entry_id:
+  name: Dimmer - Kitchen Hall
+  platform: zwave
+  unique_id: node-2
+zwave.extender_master_bedroom:
+  config_entry_id:
+  name: Extender - Master Bedroom
+  platform: zwave
+  unique_id: node-9
+zwave.multisensor_garage_entry:
+  config_entry_id:
+  name: Multisensor - Garage Entry
+  platform: zwave
+  unique_id: node-8
+zwave.multisensor_great_room:
+  config_entry_id:
+  name: Multisensor - Great Room
+  platform: zwave
+  unique_id: node-6
+zwave.switch_basketball_court:
+  config_entry_id:
+  name: Switch - Basketball Court
+  platform: zwave
+  unique_id: node-7
+media_player.chrome_2:
+  config_entry_id:
+  name:
+  platform: plex
+  unique_id: u05fqqzz3ri8tnn5qy4owy9d

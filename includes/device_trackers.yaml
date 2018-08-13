@@ -1,0 +1,6 @@
+- platform: ping
+  interval_seconds: 30
+  consider_home: 600
+  hosts:
+    andy_iphone: 172.16.1.140
+    noel_iphone: 172.16.1.141

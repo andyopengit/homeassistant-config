@@ -1,0 +1,17 @@
+- platform: yr
+- platform: sense
+  email: !secret sense_user
+  password: !secret sense_password
+  monitored_conditions:
+    - active_usage
+    - daily_usage
+    - weekly_usage
+    - monthly_usage
+    - yearly_usage
+- platform: plex
+  host: 172.16.1.25
+  name: AndyPlex
+  server: AndyPlex
+  token: !secret plex_token
+- platform: template
+  sensors: !include template_sensors.yaml

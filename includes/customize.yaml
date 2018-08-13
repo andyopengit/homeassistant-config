@@ -1,0 +1,135 @@
+binary_sensor.downstairs_thermostat_fan:
+  friendly_name: Fan
+  icon: mdi:fan
+
+binary_sensor.downstairs_thermostat_has_leaf:
+  friendly_name: Eco Mode
+  icon: mdi:leaf
+
+binary_sensor.downstairs_thermostat_online:
+  friendly_name: Status
+  templates:
+    value: >
+      if (state === 'on') return 'Online';
+      else return 'Offline';
+    _stateDisplay: >
+      if (state === 'on') return 'Online';
+      else return 'Offline';
+
+# binary_sensor.emmas_room_nest_protect_online:
+#   friendly_name: Status
+#   icon: mdi:smoke-detector
+#   templates:
+#     rgb_color: #dc3545
+#     value: >
+#       if (state === 'on') return 'Online';
+#       else return 'Offline';
+#     _stateDisplay: >
+#       if (state === 'on') return 'Online';
+#       else return 'Offline';
+
+binary_sensor.master_bedroom_nest_protect_online:
+  friendly_name: Nest - Master Bedroom
+  icon: mdi:smoke-detector
+  icon_color: #dc3545
+  templates:
+    value: >
+      if (state === 'on') return 'Online';
+      else return 'Offline';
+    _stateDisplay: >
+      if (state === 'on') return 'Online';
+      else return 'Offline';
+
+# binary_sensor.multisensor_great_room_motion:
+#   friendly_name: Motion
+#   icon: >
+#     {% if is_state('multisensor_great_room_motion', 'on') %}
+#       mdi:run
+#     {% else %}
+#       mdi:walk
+#     {% endif %}
+#   rgb_color: if (state === 'on') return [0,128,0]; else return [3, 169, 244];
+
+climate.downstairs:
+  friendly_name: Thermostat
+  # entity_picture: /local/icons/nest.png
+
+device_tracker.andys_iphone:
+  hidden: true
+
+group.great_room_lights:
+  friendly_name: Great Room Lights
+
+group.multisensor_garage_entry:
+  friendly_name: Garage Entry Multisensor
+
+group.multisensor_great_room:
+  friendly_name: Great Room Multisensor
+
+group.nest_protect_emmas_room:
+  friendly_name: Emma's Room CO/Smoke Detector
+
+group.nest_protect_master_bedroom:
+  friendly_name: Master Bedroom CO/Smoke Detector
+
+group.nest_protect_rec_room:
+  friendly_name: Rec Room CO/Smoke Detector
+
+group.nest_thermostat:
+  friendly_name: Nest Thermostat
+
+# sensor.downstairs_thermostat_humidity:
+#   friendly_name: Humidity
+#   icon: mdi:water-percent
+
+# sensor.downstairs_thermostat_temperature:
+#   friendly_name: Temperature
+
+sensor.downstairs_thermostat_operation_mode:
+  friendly_name: Mode
+
+sensor.downstairs_thermostat_hvac_state:
+  hidden: true
+
+sensor.downstairs_thermostat_target:
+  hidden: true
+
+# sensor.multisensor_great_room_relative_humidity:
+#   friendly_name: Humidity
+#   icon: mdi:water-percent
+
+sensor.multisensor_garage_entry_alarm_level:
+  hidden: true
+
+sensor.multisensor_garage_entry_alarm_type:
+  hidden: true
+
+sensor.multisensor_garage_entry_burglar:
+  hidden: true
+
+sensor.multisensor_garage_entry_emergency:
+  hidden: true
+
+sensor.multisensor_garage_entry_sourcenodeid:
+  hidden: true
+
+sensor.multisensor_great_room_alarm_level:
+  hidden: true
+
+sensor.multisensor_great_room_alarm_type:
+  hidden: true
+
+sensor.multisensor_great_room_burglar:
+  hidden: true
+
+sensor.multisensor_great_room_sourcenodeid:
+  hidden: true
+
+sensor.redwing_road_eta:
+  hidden: true
+
+sensor.yr_symbol:
+  hidden: true
+
+sun.sun:
+  hidden: true

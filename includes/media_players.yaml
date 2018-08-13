@@ -1,0 +1,5 @@
+- platform: denonavr
+  host: 172.16.1.108
+  name: 'Great Room Receiver'
+  timeout: 5
+- platform: plex

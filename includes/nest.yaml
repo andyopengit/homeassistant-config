@@ -1,0 +1,7 @@
+binary_sensors:
+  monitored_conditions:
+    - online
+    - fan
+    - has_leaf
+client_id: !secret nest_client_id
+client_secret: !secret nest_client_secret

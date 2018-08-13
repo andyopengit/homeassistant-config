@@ -1,0 +1,40 @@
+title: Home Dashboard
+excluded_entities:  # Exclude entities from "Unused entities" view
+resources:
+  - url: /local/custom_ui/weather-card.js
+    type: js
+views:
+  - type: horizontal-stack
+    cards:  # The cards to show on this view.
+      - type: entities  # The filter card will filter entities for their state
+        title: 'Great Room Multisensor'
+        entities:
+          - entity: sensor.multisensor_aeotec_great_room_temperature
+            name: Temperature
+          - entity: sensor.multisensor_aeotec_great_room_relative_humidity
+          - entity: sensor.multisensor_aeotec_great_room_sourcenodeid
+            name: ID
+          - entity: sensor.multisensor_aeotec_great_room_burglar
+            name: Burglar
+          - entity: sensor.multisensor_aeotec_great_room_alarm_type
+            name: Alarm Type
+          - entity: sensor.multisensor_aeotec_great_room_alarm_level
+            name: Alarm Level
+          - entity: sensor.multisensor_aeotec_great_room_luminance
+            name: Light
+          - entity: sensor.multisensor_aeotec_great_room_ultraviolet
+            name: Ultraviolet
+      - type: vertical-stack
+        cards:
+          - type: entities
+            title: 'Detector - Master Bedroom'
+            entities:
+              - binary_sensor.master_bedroom_nest_protect_online
+              - sensor.master_bedroom_nest_protect_battery_health
+              - sensor.master_bedroom_nest_protect_co_status
+              - sensor.master_bedroom_nest_protect_color_status
+              - sensor.master_bedroom_nest_protect_smoke_status
+          - type: "custom:weather-card"
+            title: 'Local Weather (Home)'
+            entity_weather: weather.yweather
+            entity_sun: sun.sun

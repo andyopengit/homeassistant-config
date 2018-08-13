@@ -1,0 +1,62 @@
+  - alias: Set Great Room TV activity using input_select
+    hide_entity: True
+    trigger:
+      platform: state
+      entity_id: input_select.great_room
+    action:
+      service: remote.turn_on
+      entity_id: remote.great_room
+      data_template:
+        activity: >
+          {% if is_state("input_select.great_room", "Android TV") %}
+            25766235
+          {% elif is_state("input_select.great_room", "Apple TV") %}
+            26691142
+          {% else %}
+            -1
+          {% endif %}
+        
+# This next automation is to update the input_select when the Harmony's
+# activity was changed from somewhere else, e.g. using its physical remote.
+#  - alias: Update Harmony input_select
+#    hide_entity: True
+#    trigger:
+#      platform: state
+#      entity_id: remote.centralcontroller
+#    action:
+#      service: input_select.select_option
+#      data_template:
+#        entity_id: input_select.harmony
+#        option: "{{ states.remote.centralcontroller.attributes.current_activity }}"
+
+  - alias: Set Bedroom TV activity using input_select
+    hide_entity: True
+    trigger:
+      platform: state
+      entity_id: input_select.bedroom
+    action:
+      service: remote.turn_on
+      entity_id: remote.bedroom
+      data_template:
+        activity: >
+          {% if is_state("input_select.bedroom", "Shield TV") %}
+            33931051
+          {% else %}
+            -1
+          {% endif %}
+
+  - id: '1531025654050'
+    alias: Opened Door
+    trigger:
+    - entity_id: binary_sensor.test_window
+      from: 'off'
+      platform: state
+      to: 'on'
+    condition:
+    - condition: state
+      entity_id: switch.buzzer
+      state: 'off'
+    action:
+    - data:
+        entity_id: group.alarm_chimes
+      service: switch.turn_on

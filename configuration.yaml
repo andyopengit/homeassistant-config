@@ -1,0 +1,31 @@
+homeassistant: !include ha.yaml
+automation: !include includes/automations.yaml
+cloud:
+config:
+conversation:
+cover: !include includes/covers.yaml
+device_tracker: !include includes/device_trackers.yaml
+discovery:
+frontend:
+group: !include includes/groups.yaml
+history:
+http: !include includes/http.yaml
+influxdb: !include includes/influxdb.yaml
+input_select: !include includes/input_select.yaml
+ios:
+konnected: !include includes/konnected.yaml
+logbook:
+logger: !include includes/logger.yaml
+lutron: !include includes/lutron.yaml
+map:
+media_player: !include includes/media_players.yaml
+nest: !include includes/nest.yaml
+script: !include includes/scripts.yaml
+sensor: !include includes/sensors.yaml
+sun:
+tts: !include includes/tts.yaml
+updater:
+weather:
+zha: !include includes/zha.yaml
+zoneminder: includes/zoneminder.yaml
+zwave: !include includes/zwave.yaml

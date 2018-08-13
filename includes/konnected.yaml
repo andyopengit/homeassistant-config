@@ -1,0 +1,20 @@
+access_token: !secret konnected
+api_host: http://172.16.1.215:8123
+devices:
+  - id: dc4f2219711e
+    binary_sensors:
+      - zone: 1
+        type: window
+        name: 'Corner Bedroom Front Window'
+      - zone: 2
+        type: window
+        name: 'Front Bedroom Window 1'
+      - zone: 3
+        type: window
+        name: 'Master Bedroom Front Window'
+      - zone: 4
+        type: window
+        name: 'Front Bedroom Window 2'
+    switches:
+      - zone: 5
+        name: 'test buzzer'
